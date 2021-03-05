@@ -1,0 +1,77 @@
+html,body{
+    margin: 0;
+    
+}
+.res{
+    display:flex;
+}
+#logo{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+#logo img{
+    height: 60px;
+}
+.control{
+    width: 70px;
+    background-color: rgb(255, 255, 255);
+    border-right:solid 1px rgb(158, 156, 156);
+    box-shadow:1px 5px 10px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+canvas{
+    grid-row: auto;
+}
+.tools{
+    margin: 5px;
+    padding: 2px;
+}
+.tools:hover{
+    background-color: rgb(221, 221, 218);
+    transform: scale(1.2);
+}
+.selected{
+    background-color: rgb(221, 221, 218);
+}
+.control img{
+    margin: 5px;
+    height: 40px;
+}
+.tools .penclick{ 
+    background-color: rgb(245, 245, 239);
+    padding: 7px;
+    position: absolute;  
+    align-items: center;
+    display: none;
+}
+.tools:hover .penclick{
+    display: inline-flex;
+    margin: 2px;
+}
+label {
+    font: 1rem sans-serif;
+    font-size: x-small;
+    color: grey;
+}
+
+input[type="color"] {
+	display: block;
+	width: 32px;
+	height: 32px;
+	border: 2px;
+}
+#end{
+    font: 1rem sans-serif;
+    font-size: small;
+    color: rgb(145, 139, 139);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
